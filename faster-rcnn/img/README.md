@@ -1,0 +1,1 @@
+可以将需要用训练好的模型predict的图片放在这里，运行predict.py即可生成图片后缀+‘_predict.png’的包含预测框的文件
