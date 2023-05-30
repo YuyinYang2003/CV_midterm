@@ -90,7 +90,9 @@ class FasterRCNN(nn.Module):
             base_feature    = self.extractor.forward(x)
             return base_feature
         elif mode == "rpn":
-            base_feature, img_size = x
+            #base_feature, img_size = x
+            img_size = x.shape[2:]
+            base_feature    = self.extractor.forward(x)
             #---------------------------------#
             #   获得建议框
             #---------------------------------#
