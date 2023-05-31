@@ -15,10 +15,10 @@
 
 3.训练过程中可开启tensorboard实时查看train/val loss和每五个epoch评估的mAP和MIoU曲线。
 
-### d.图片处理
-1.生成第一阶段top 100 proposal boxes:
+## 三、图片处理
+### a.生成第一阶段top 100 proposal boxes
 将nets/frcnn.py中94行注释，95，96行取消注释，并将根目录下frcnn.py文件中的"model_path"为你想使用模型的相对路径，将图片存放在proposal_img文件夹中，运行根目录下的proposal_box.py，输入图片路径即可预测。生成的有proposal box的图片将储存在proposal_img文件夹中，后缀‘proposal_box’。例如‘airport_proposal_box.png’。
 
-2.生成检测结果（类别标签，得分，boundingbox）：
+### b.生成检测结果（类别标签，得分，boundingbox）
 将根目录下frcnn.py文件中的"model_path"为你想使用模型的相对路径，将图片存放在img文件夹中，运行根目录下的predict.py，输入图片路径即可预测。生成的有预测结果的图片将储存在img文件夹中，后缀‘predict’。例如‘cat_predict.png’。
 
