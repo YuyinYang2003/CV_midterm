@@ -90,6 +90,7 @@ class FasterRCNN(nn.Module):
             base_feature    = self.extractor.forward(x)
             return base_feature
         elif mode == "rpn":
+            #在运行proposal_box.py时将95和96行注释，并将下面这行取消注释，正常train不用修改
             #base_feature, img_size = x
             img_size = x.shape[2:]
             base_feature    = self.extractor.forward(x)
