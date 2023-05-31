@@ -9,4 +9,4 @@
 | 模型 | 模型链接 | 训练测试数据集 | epoch | mAP 0.5 |
 | :-----: | :-----: | :------: | :------: | :------: |
 | Faster R-CNN | 百度网盘链接: https://pan.baidu.com/s/1DqW4MAf-pnNLA1-H-qtUlQ 提取码: o92l | VOC2007 | 100 | 79.82% |
-| RetinaNet | 百度网盘链接: https://pan.baidu.com/s/1i9Ep3GM8tgwT-BKHb1znBA 提取码: 83iq | VOC2007 | 150 | 87.78% |
+| RetinaNet | 百度网盘链接: https://pan.baidu.com/s/1i9Ep3GM8tgwT-BKHb1znBA 提取码: 83iq | VOC2007 | 150 | 87.55% |
