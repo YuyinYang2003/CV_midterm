@@ -75,7 +75,8 @@ if __name__ == "__main__":
                 continue
             else:
                 r_image = retinanet.detect_image(image, crop = crop, count=count)
-                r_image.show()
+                r_image.save(img[:-4]+'_predict.png')
+                #r_image.show()
 
     elif mode == "video":
         capture = cv2.VideoCapture(video_path)
